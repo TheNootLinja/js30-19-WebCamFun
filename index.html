@@ -10,7 +10,7 @@
   <div class="photobooth">
     <div class="controls">
       <button onClick="takePhoto()">Take Photo</button>
-<!--       <div class="rgb">
+      <div class="rgb">
         <label for="rmin">Red Min:</label>
         <input type="range" min=0 max=255 name="rmin">
         <label for="rmax">Red Max:</label>
@@ -29,13 +29,22 @@
         <input type="range" min=0 max=255 name="bmin">
         <label for="bmax">Blue Max:</label>
         <input type="range" min=0 max=255 name="bmax">
-      </div> -->
+      </div>
+      <div class="effects">
+        <input name="effect" type="radio" id="red-effect" value="Red Effect">
+        <label for="red-effect">Red Effect</label>
+        <input name="effect" type="radio" id="red-effect" value="RGB Split">
+        <label for="red-effect">RGB Split</label>
+        <input name="effect" type="radio" id="red-effect" value="Green Screen">
+        <label for="red-effect">Green Screen</label>
+      </div>
     </div>
 
     <canvas class="photo"></canvas>
     <video class="player"></video>
     <div class="strip"></div>
   </div>
+
 
   <audio class="snap" src="./snap.mp3" hidden></audio>
 
